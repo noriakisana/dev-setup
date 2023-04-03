@@ -10,18 +10,30 @@ The setup includes:
 - continuous integration (pre-commit hooks)
 - VisualStudio
 
-A fully installed VirtualBox Image is available [here](https://gigamove.rwth-aachen.de/de/download/e03393275121c3e8d7d0775437b434a0). If the link has expired, please contact Gerit Wagner.
+A fully installed VirtualBox Image is available [here](https://gigamove.rwth-aachen.de/de/download/9453143c22408f2757dfd9946ec2fe0a). If the link has expired, please contact Gerit Wagner.
 
 Before using the setup, please update your git credentials (using the shell):
 
 ```
 git config --global user.name "Lisa Smith"
 git config --global user.email "lisa.smith@uni-bamberg.de"
+git config --global credential.helper store
 ```
+
+Create an SSH key pair and register the public key at Github ([steps](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)).
+
+
+To activate copy-paste between the VM and your OS: Geräte - Gemeinsame Zwischenablage - bidirektional
 
 A fully configured Ubuntu/VirtualBox image is available [here](TODO).
 The documentation can be used to set up the environment on other machines.
 Although we only support the VirtualBox/Ubuntu setup, useful hints for the setup on other machines can be contributed to this repository (issues or pull-requests).
+
+To test colrev, open a Terminal (``alt+ctrl+t``), navigate to an empty directory, and run
+
+```
+colrev init
+```
 
 Installation log:
 
@@ -43,5 +55,8 @@ python3 -m pip install --upgrade pip
 
 cd ~/Desktop && git clone https://github.com/CoLRev-Ecosystem/colrev && cd colrev
 pip3 install -e .
+
+cd ~/Desktop
+git clone https://github.com/geritwagner/dev-setup
 
 ```
