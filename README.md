@@ -10,7 +10,10 @@ The setup includes:
 - continuous integration (pre-commit hooks)
 - VisualStudio
 
-A fully installed VirtualBox Image is available [here](https://gigamove.rwth-aachen.de/de/download/9453143c22408f2757dfd9946ec2fe0a). If the link has expired, please contact Gerit Wagner.
+A fully installed VirtualBox image is available [here](https://gigamove.rwth-aachen.de/de/download/9453143c22408f2757dfd9946ec2fe0a). If the link has expired, please contact [Gerit Wagner](mailto:gerit.wagner@uni-bamberg.de).
+
+The documentation can be used to set up the environment on other machines.
+Although we only support the VirtualBox/Ubuntu setup, useful hints for the setup on other machines can be contributed to this repository (issues or pull-requests).
 
 Before using the setup, please update your git credentials (using the shell):
 
@@ -25,9 +28,6 @@ Create an SSH key pair and register the public key at Github ([steps](https://do
 
 To activate copy-paste between the VM and your OS: Geräte - Gemeinsame Zwischenablage - bidirektional
 
-A fully configured Ubuntu/VirtualBox image is available [here](TODO).
-The documentation can be used to set up the environment on other machines.
-Although we only support the VirtualBox/Ubuntu setup, useful hints for the setup on other machines can be contributed to this repository (issues or pull-requests).
 
 To test colrev, open a Terminal (``alt+ctrl+t``), navigate to an empty directory, and run
 
