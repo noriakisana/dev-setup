@@ -26,10 +26,10 @@ git config --global credential.helper store
 Create an SSH key pair and register the public key at Github ([steps](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)).
 
 
-To activate copy-paste between the VM and your OS: Geräte - Gemeinsame Zwischenablage - bidirektional
+To activate copy-paste between the VM and your OS: Geräte &rarr; Gemeinsame Zwischenablage &rarr; bidirektional
 
 
-To test colrev, open a Terminal (``alt+ctrl+t``), navigate to an empty directory, and run
+To test colrev, open a Terminal (``Alt``+``Ctrl``+``T``), navigate to an empty directory, and run:
 
 ```
 colrev init
@@ -39,7 +39,9 @@ Installation log:
 
 - Image: [Ubuntu 22.04.2 LTS](https://ubuntu.com/download/desktop/thank-you?version=22.04.2&architecture=amd64)
 - VirtualBox: [Version 7.0.6](https://www.virtualbox.org/) with Guest additions
-- Account: username:ubuntu, password:ubuntu
+- Account: 
+  - Username: ubuntu
+  - Password: ubuntu
 
 ```
 sudo apt install python3-pip
