@@ -19,7 +19,7 @@ Before using the setup, please update your git credentials (using the shell):
 
 ```
 git config --global user.name "Lisa Smith"
-git config --global user.email "lisa.smith@uni-bamberg.de"
+git config --global user.email "lisa.smith@stud.uni-bamberg.de"
 git config --global credential.helper store
 ```
 
