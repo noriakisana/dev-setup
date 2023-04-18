@@ -15,12 +15,16 @@ A fully installed VirtualBox image is available [here](https://gigamove.rwth-aac
 The documentation can be used to set up the environment on other machines.
 Although we only support the VirtualBox/Ubuntu setup, useful hints for the setup on other machines can be contributed to this repository (issues or pull-requests).
 
-Before using the setup, please update your git credentials (using the shell):
+After unpacking the VirtualBox Image, open the ``colrev_dev.vbox`` file, start the machine, and log in (account: ``ubuntu``, password: ``ubuntu``).
+
+Before using the setup, please update your git credentials (using the shell / ``ctrl+alt+t``) and pull the latest version of CoLRev:
 
 ```
 git config --global user.name "Lisa Smith"
 git config --global user.email "lisa.smith@stud.uni-bamberg.de"
 git config --global credential.helper store
+cd ~/Desktop/colrev
+git pull
 ```
 
 Create an SSH key pair and register the public key at Github ([steps](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)).
