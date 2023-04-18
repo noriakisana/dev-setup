@@ -50,9 +50,18 @@ sudo apt install gitk
 sudp apt install python3-poetry
 pip3 install poetry pytest-mock pylint pytest
 sudo snap install --classic code
-sudo snap install docker.io
-sudo gpasswd -a $USER docker
-newgrp docker
+
+sudo apt install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
 python3 -m pip install --upgrade pip
 
 cd ~/Desktop && git clone https://github.com/CoLRev-Ecosystem/colrev && cd colrev
