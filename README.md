@@ -10,7 +10,7 @@ The setup includes:
 - continuous integration (pre-commit hooks)
 - VisualStudio
 
-A fully installed VirtualBox image is available [here](https://gigamove.rwth-aachen.de/de/download/9453143c22408f2757dfd9946ec2fe0a). If the link has expired, please contact [Gerit Wagner](mailto:gerit.wagner@uni-bamberg.de).
+A fully installed VirtualBox image is available [here](https://gigamove.rwth-aachen.de/de/download/29146e80c3ec3e691e35b4866e9573c9). If the link has expired, please contact [Gerit Wagner](mailto:gerit.wagner@uni-bamberg.de).
 
 The documentation can be used to set up the environment on other machines.
 Although we only support the VirtualBox/Ubuntu setup, useful hints for the setup on other machines can be contributed to this repository (issues or pull-requests).
@@ -80,7 +80,7 @@ sudo snap install --classic code
 
 cd ~/Desktop
 git clone https://github.com/geritwagner/dev-setup
-git clone https://github.com/CoLRev-Ecosystem/colrev
+git clone https://github.com/CoLRev-Environment/colrev
 cd colrev
 pip3 install -e .
 pre-commit install
