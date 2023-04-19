@@ -76,7 +76,6 @@ sudo apt install python3-pip
 python3 -m pip install --upgrade pip
 python3 -m pip install poetry pytest-mock pylint pytest pre-commit
 python3 -m pip install --upgrade paramiko
-sudo snap install --classic code
 
 cd ~/Desktop
 git clone https://github.com/geritwagner/dev-setup
