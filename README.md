@@ -78,8 +78,8 @@ python3 -m pip install poetry pytest-mock pylint pytest pre-commit
 python3 -m pip install --upgrade paramiko
 
 cd ~/Desktop
-git@github.com:geritwagner/dev-setup.git
-git@github.com:CoLRev-Environment/colrev.git
+git clone git@github.com:geritwagner/dev-setup.git
+git clone git@github.com:CoLRev-Environment/colrev.git
 cd colrev
 pip3 install -e .
 pre-commit install
