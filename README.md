@@ -86,8 +86,6 @@ cd ~/Desktop
 git clone git@github.com:geritwagner/dev-setup.git
 git clone git@github.com:CoLRev-Environment/colrev.git
 cd colrev
-pip3 install -e .
-# if the previous command did not execute, try the following instead:
 pip install -e .
 pre-commit install
 pre-commit run --all
