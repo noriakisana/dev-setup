@@ -21,7 +21,9 @@ To avoid performance issues, the following settings are recommended:
 ```
 Settings - system - acceleration
 - KVM recommended for Linux guests
-- Hyper-V recommended for WIndows guests
+- Hyper-V recommended for Windows guests
+
+If you encounter any graphical glitches or errors, consider turning off 3D acceleration temporarily:
 Settings - display - disable 3D acceleration
 ```
 
@@ -77,17 +79,24 @@ python3 -m pip install --upgrade pip
 python3 -m pip install poetry pytest-mock pylint pytest pre-commit
 python3 -m pip install --upgrade paramiko
 
+
+# Clone and install CoLRev on your Desktop
+# Make sure you have registered your SSH key on GitHub beforehand
 cd ~/Desktop
 git clone git@github.com:geritwagner/dev-setup.git
 git clone git@github.com:CoLRev-Environment/colrev.git
 cd colrev
-pip3 install -e .
+pip install -e .
 pre-commit install
 pre-commit run --all
+
+# Create a testfolder and try out CoLRev
 cd ~/Desktop
 mkdir test
 cd test
 colrev init --example
-# Complete run to pull the Docker images
+# Complete run to pull the Docker images, this may be time consuming
+# the status operation will guide you through the whole process
+colrev status
 
 ```
