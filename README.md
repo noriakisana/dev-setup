@@ -72,6 +72,8 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo gpasswd -a $USER docker
+newgrp docker
 
 sudo apt install python-is-python3
 sudo apt install python3-pip
