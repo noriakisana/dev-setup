@@ -89,6 +89,7 @@ git clone git@github.com:geritwagner/dev-setup.git
 git clone git@github.com:CoLRev-Environment/colrev.git
 cd colrev
 pip install -e .
+poetry install --with dev
 pre-commit install
 pre-commit run --all
 
